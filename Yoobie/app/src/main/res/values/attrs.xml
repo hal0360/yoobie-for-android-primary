@@ -1,0 +1,28 @@
+<resources>
+
+    <declare-styleable name="YoobieInput">
+        <attr name="inputIcon" format="integer" />
+        <attr name="placeholder" format="string" />
+        <attr name="inputText" format="string" />
+        <attr name="inputType" format="enum">
+            <enum name="password" value="1"/>
+            <enum name="number" value="2"/>
+            <enum name="plain" value="3"/>
+            <enum name="disabled" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="YoobieSpinner">
+        <attr name="spinnerIcon" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="YoobieText">
+        <attr name="textIcon" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+
+</resources>

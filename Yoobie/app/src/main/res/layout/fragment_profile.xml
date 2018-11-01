@@ -1,0 +1,140 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="nz.co.udenbrothers.yoobie.ProfileFragment">
+
+    <TextView
+        android:id="@+id/profileMail"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/mail_icon"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/mail_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/profilePhone"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/phone_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileMail" />
+
+    <TextView
+        android:id="@+id/profileLocation"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/location_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePhone" />
+
+    <TextView
+        android:id="@+id/profileBirth"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/dob_icon"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/dob_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileLocation" />
+
+    <TextView
+        android:id="@+id/profileGender"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/gender_icon"
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/gender_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileBirth" />
+
+    <ImageView
+        android:id="@+id/editButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/imgDes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/imgDes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/avatar1" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:textSize="27dp"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+
+</android.support.constraint.ConstraintLayout>

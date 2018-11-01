@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFF"
+    tools:context="nz.co.udenbrothers.yoobie.SignUp2Activity">
+
+    <nz.co.udenbrothers.yoobie.wigets.WaveView
+        android:id="@+id/wave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/yoobie_button"
+        android:text="@string/signUp_butt"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/white_dot" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grey_dot" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieInput
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:inputIcon="@drawable/name_icon"
+        app:placeholder="@string/name_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieSpinner
+        android:id="@+id/inputCountry"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:spinnerIcon="@drawable/location_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieSpinner
+        android:id="@+id/inputRegion"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:spinnerIcon="@drawable/location_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCountry" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieInput
+        android:id="@+id/inputPhone"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:inputType="number"
+        app:inputIcon="@drawable/phone_icon"
+        app:placeholder="@string/phone_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputRegion" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieInput
+        android:id="@+id/inputDOB"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:placeholder="@string/dob_hint"
+        app:inputIcon="@drawable/dob_icon"
+        app:inputType="disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPhone" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieSpinner
+        android:id="@+id/inputGender"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:spinnerIcon="@drawable/gender_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDOB" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtTimerDay"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/countdown_border"
+        android:gravity="center"
+        android:text="@string/countdown_holder"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtTimerHour"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/countdown_border"
+        android:gravity="center"
+        android:text="@string/countdown_holder"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/txtTimerDay"
+        android:layout_toRightOf="@+id/txtTimerDay"/>
+
+    <TextView
+        android:id="@+id/txtTimerMinute"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/countdown_border"
+        android:gravity="center"
+        android:text="@string/countdown_holder"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/txtTimerHour"
+        android:layout_toRightOf="@+id/txtTimerHour" />
+
+    <TextView
+        android:id="@+id/txtTimerSecond"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/countdown_border"
+        android:gravity="center"
+        android:text="@string/countdown_holder"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/txtTimerMinute"
+        android:layout_toRightOf="@+id/txtTimerMinute"/>
+
+</merge >

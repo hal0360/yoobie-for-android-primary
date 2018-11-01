@@ -1,0 +1,65 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.co.udenbrothers.yoobie.SignInFragment">
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/yoobie_button"
+        android:text="@string/signIn_butt"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieInput
+        android:id="@+id/inputMail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:inputIcon="@drawable/mail_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:placeholder="@string/email_input_hint" />
+
+    <nz.co.udenbrothers.yoobie.wigets.YoobieInput
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_height"
+        android:layout_marginEnd="@dimen/input_padding"
+        android:layout_marginStart="@dimen/input_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputMail"
+        app:inputIcon="@drawable/password_icon"
+        app:placeholder="@string/pass_hint" />
+
+    <TextView
+        android:id="@+id/forgotPassButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgot_pass"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+</android.support.constraint.ConstraintLayout>
